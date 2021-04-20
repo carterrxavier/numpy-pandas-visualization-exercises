@@ -105,7 +105,7 @@ mean_of_b = b.mean()
 #for row in b:
     #for number in row:
         #product_of_b *= number
-product_of_b = b.prod()
+product_of_b = b.prod() 
 
 
 # Exercise 6 - refactor the following to use numpy to find the list of squares 
@@ -146,8 +146,7 @@ b.transpose()
 b11 = b.reshape(1,6)
 # Exercise 12 - reshape the array b to be a list of 6 lists, each containing only 1 number (6 x 1)\
 b12 = b.reshape(6,1)
-
-
+ 
 ## Setup 3
 c =  np.array([
     [1, 2, 3],
