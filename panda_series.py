@@ -50,7 +50,7 @@ fruits[fruits.str.lower().str.count((r'[a]'))]
 
 
 #3 Output the number of vowels in each and every string value.
-fruits[fruits.str.lower().str.count((r'[aeiou]'))]
+print(fruits[fruits.str.lower().str.count((r'[aeiou]'))]
 
 #4 Write the code to get the longest string value from fruits.
 variable = fruits.str.len().max() == fruits.str.len()
@@ -105,17 +105,18 @@ sum(letters.str.lower().str.count(r'[a-z]') - all_vowels)
 #5 Create a Series that has all of the same letters but uppercased.
 letters_up = letters.str.capitalize()
 
-#6 Create a bar plot of the frequencies of the 6 most commonly occuring letters.
-arg = letters.value_counts().nlargest(n=6, keep='first').plot.bar(rot=0)
+#6 in jupyter notebook 
+# 
+# Create a bar plot of the frequencies of the 6 most commonly occuring letters.
+arg = letters.value_counts().nlargest(n=6, keep='first').plot.bar(rot=0).
 print(arg)
 
 
 
 
 
-# Use pandas to create a Series named numbers from the following list:
- 
- 
+#rest found in jupyter notebook
+
 
 
 
