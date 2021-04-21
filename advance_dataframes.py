@@ -1,6 +1,7 @@
 from env import user, password,host
 import pandas as pd
 import numpy as np
+import datetime
 
 #1 Create a function named get_db_url. It should accept a username, 
 # hostname, password, and database name and return a url connection
@@ -35,7 +36,10 @@ df_titles = pd.read_sql('select * from titles', url)
 print(len(df_titles['title'].drop_duplicates()))
 
 #8
-print(df_titles['to_date'].max())
+print(df_titles['to_date'].min())
+
 
 #9
-print(df_titles['to_date'].min())
+print(df_titles[df_titles['to_date'] < df_titles['to_date'].max()].to_date.max())
+
+
